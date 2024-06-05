@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <figure>            <!--標示文件標題(table、img、code)-->
+        <!--- border屬性 可以建立表格匡線-->
+        <table border="1"> <!--表格<table>創建一個表格 -->
+
+
+            <caption>某某某</caption> <!--獨立於表格的標題-->
+
+
+            <colgroup> <!--<colgroup> 欄位的群組化，讓縱向的欄位群組，使用<col>改變屬性-->
+                <col span="1" style="background-color:gray;">
+                <col style="background-color: antiquewhite;">
+            </colgroup>
+            
+            <thead>
+                <tr>
+                    <th colspan="3" style="background-color: white;">聯合國水資源中心</th>
+                </tr>
+                <tr>
+                    <th>河流名稱</th> <!-- <thead> 建立表頭 <th>定義表頭內容-->
+                    <th>國家</th>
+                    <th>州名</th>
+                </tr>
+            </thead>
+
+            <tbody> <!-- 通常會用<tbody> 表體 區分表格 -->
+                <tr> <!-- <tr> 定義行的表格 <td>則是定義儲存格的內容 -->
+                    <td>長江</td>
+                    <td>中國</td>
+                    <td>亞洲</td>
+                </tr>
+                <tr>
+                    <td>尼羅河</td>
+                    <td>
+                        <h1><a href="..." target="_blank">埃及</a></h1>
+                    </td>
+                    <td>非洲</td>
+                </tr>
+                <tr>
+                    <td>亞馬遜河</td>
+                    <td>巴西</td>
+                    <td>南美洲</td>
+                </tr>
+            </tbody>
+
+            <tfoot> <!-- <tfoot> 建立表尾-->
+                <tr>
+                    <td colspan="3" style="background-color: white;">建立日期 2024/12/08</td> <!-- colspan 屬性 可用於合併儲存格-->
+                </tr>
+            </tfoot>
+        </table>
+        <figcaption>測試</figcaption>   <!--為表格底部添加標題-->
+    </figure>
+</body>
+
+</html>
